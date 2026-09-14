@@ -63,6 +63,7 @@ setup_libtemporal_enums ()
 
 	enum_writer.add_to_hack_table ("Tempo::Ramped", "Ramped");
 	enum_writer.add_to_hack_table ("Tempo::Constant", "Constant");
+	set_superclock_ticks_per_second (282240000);  /* 2^10 * 3^2 * 5^4 * 7^2 */
 }
 
 void Temporal::init ()
